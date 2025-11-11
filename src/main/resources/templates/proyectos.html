@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jhonatan</title>
+    <link rel="stylesheet" th:href="@{/css/MiEstilo.css}">
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <h1 class="logo">JHONATAN ROMERO</h1>
+        <ul class="nav-links">
+            <li><a th:href="@{/}">Inicio</a></li>
+            <li><a th:href="@{/proyectos}">Proyectos</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h3>ESTOS SON ALGUNOS DE MIS PROYECTOS: </h3>
+			<article>
+				<p><strong>TERRA-BROKER: </strong>Proyecto de un mini broker, en el cual podremos comprar activos cripto como BTC, ETH, SOL, ADA, 
+				DOGE. A su vez tambien podremos seguir nuestras posiciones y ver graficos en directo de los activos mas importantes, pero ¡espera!,
+				<strong>¡Proyecto en desarrollo!</strong> en cuanto esté listo, se podra visualizar ;)</p>
+				<div class="hero-img" style="display: flex; margin-left: -80px;">
+					<img style="height: 150px; width: 250px;" th:src="@{/img/trading.jpg}" alt="trading">
+					<img style="height: 150px; width: 250px;" th:src="@{/img/BTC.jpg}" alt="BTC">
+				</div>
+			</article>	
+        </div>
+	</section>
+</header>
+
+<footer>
+    <p>© 2025 Jhonatan Romero - Software Developer </p>
+</footer>
+
+</body>
+</html>

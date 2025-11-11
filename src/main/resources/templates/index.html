@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jhonatan</title>
+    <link rel="stylesheet" th:href="@{/css/MiEstilo.css}">
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <h1 class="logo">JHONATAN ROMERO</h1>
+        <ul class="nav-links">
+            <li><a th:href="@{/}">Inicio</a></li>
+            <li><a th:href="@{/proyectos}">Proyectos</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Hola, soy <span>Jhonatan</span> 👋</h2>
+            <h3>SOFTWARE DEVELOPER / CLOUD ENGINEER JR</h3>
+            <p>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma con experiencia práctica en entornos Cloud (AWS) y desarrollo Full Stack
+			con Java y Spring Boot. Persona proactiva, resolutiva y con facilidad para aprender nuevas tecnologías. Busco incorporarme a un entorno
+			donde pueda aplicar mis conocimientos en AWS, automatización en Linux y desarrollo backend, contribuyendo a proyectos mientras continúo
+			mi crecimiento profesional.</p>
+            <div class="hero-buttons">
+                <a th:href="@{/proyectos}" class="btn btn-outline">Ver mis proyectos</a>
+                <a th:href="@{/informacion}" class="btn btn-outline">Sobre mi / Contacto</a>
+			</div>
+        </div>
+        <div class="hero-img">
+            <img th:src="@{/img/fotoPerfil.jpg}" alt="Foto de perfil">
+        </div>
+    </section>
+</header>
+
+<main>
+    <section class="skills">
+        <h2>💡 Tecnologías</h2>
+        <div class="skills-grid">
+            <div class="skill">Java</div>
+			<div class="skill">Python</div>
+            <div class="skill">Spring Boot</div>
+            <div class="skill">Cloud AWS Services</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">HTML / CSS</div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Jhonatan Romero - Software Developer</p>
+</footer>
+
+</body>
+</html>
