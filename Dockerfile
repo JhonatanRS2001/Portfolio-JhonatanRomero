@@ -1,25 +1,10 @@
-# Usa una imagen oficial de OpenJDK 17
-FROM eclipse-temurin:17-jdk-alpine
-
-# Crea un directorio dentro del contenedor para la app
+FROM maven:3.8.5-eclipse-temurin-17 AS build
 WORKDIR /app
+COPY . .
+RUN mvn clean package -DskipTests
 
-# Copia el archivo pom.xml y los archivos de configuración de Maven
-COPY pom.xml ./
-COPY mvnw ./
-COPY .mvn .mvn
-
-# Descarga las dependencias (para aprovechar la caché)
-RUN ./mvnw dependency:go-offline
-
-# Copia el resto del código fuente
-COPY src ./src
-
-# Construye el JAR sin ejecutar tests
-RUN ./mvnw clean package -DskipTests
-
-# Expone el puerto (Render usa una variable de entorno llamada PORT)
+FROM eclipse-temurin:17-jdk
+WORKDIR /app
+COPY --from=build /app/target/portfolio-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
-
-# Comando de inicio
-CMD ["java", "-jar", "target/portfolio-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
