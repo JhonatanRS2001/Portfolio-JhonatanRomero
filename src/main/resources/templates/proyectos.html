@@ -1,43 +1,78 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Jhonatan</title>
-    <link rel="stylesheet" th:href="@{/css/MiEstilo.css}">
+    <link rel="stylesheet" href="css/MiEstilo.css">
 </head>
 <body>
 
 <header class="header">
     <nav class="navbar">
-		<img style="height: 120px; width: 160px;" th:src="@{/img/logo-jr.png}" alt="logo">
+        <img style="height: 120px; width: 160px;" src="img/logo-jr.png" alt="logo">
         <ul class="nav-links">
-            <li><a th:href="@{/}">Inicio</a></li>
-            <li><a th:href="@{/proyectos}">Proyectos</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
         </ul>
     </nav>
 
     <section class="hero">
         <div class="hero-text">
             <h3><strong>ESTOS SON ALGUNOS DE MIS PROYECTOS:</strong></h3>
-			<article>
-				<p>Puedes acceder a mi repositorio de <a href="https://github.com/JhonatanRS2001" target="_blank">Github</a></p>
-			<article>
-				<p><strong>TERRA-BROKER: </strong>Proyecto de un mini broker, en el cual podremos comprar activos cripto como BTC, ETH, SOL, ADA, 
-				DOGE. A su vez tambien podremos seguir nuestras posiciones y ver graficos en directo de los activos mas importantes.</p>
-			<p><strong>¡Proyecto Finalizado!</strong> Acceder a  <a href="https://www.terrabroker.es" target="_blank">Terrabroker</a></p>
-				<div class="hero-img" style="display: flex; margin-left: -200px;">
-					<img style="height: 150px; width: 250px;" th:src="@{/img/trading.jpg}" alt="trading">
-					<img style="height: 150px; width: 250px;" th:src="@{/img/BTC.jpg}" alt="BTC">
-					<img style="height: 150px; width: 250px;" th:src="@{/img/fondo-terra.png}" alt="BTC">
+
+            <article>
+                <p>Puedes acceder a mi repositorio de
+                <a href="https://github.com/JhonatanRS2001" target="_blank">GitHub</a></p>
+            </article>
+
+            <article>
+                <p><strong>TERRABROKER - Plataforma Cloud de Gestión de Carteras de Inversión</strong></p>
+                <p>Plataforma donde podremos comprar activos cripto como BTC, ETH, SOL, ADA y DOGE.
+                A su vez también podremos seguir nuestras posiciones y ver gráficos en directo
+                de los activos más importantes.</p>
+                <p>Desarrollado con <strong>Java 17, Spring Boot, Hibernate y Thymeleaf</strong>.
+                Desplegado en <strong>AWS (EC2, RDS MySQL, Route 53)</strong>.</p>
+                <p>
+                    <a href="https://www.terrabroker.es" target="_blank">🌐 Ver aplicación en producción</a>
+                    &nbsp;|&nbsp;
+                    <a href="https://github.com/JhonatanRS2001/Terra-Broker" target="_blank">📂 Ver código en GitHub</a>
+                </p>
+                <div class="hero-img" style="display: flex; margin-left: -200px;">
+                    <img style="height: 150px; width: 250px;" src="img/trading.jpg" alt="trading">
+                    <img style="height: 150px; width: 250px;" src="img/BTC.jpg" alt="BTC">
+                    <img style="height: 150px; width: 250px;" src="img/fondo-terra.png" alt="TerraBroker">
+                </div>
+            </article>
+
+            <article>
+                <p><strong>TERRABROKER - Infrastructure as Code (Terraform)</strong></p>
+                <p>Migración completa de la infraestructura de TerraBroker a
+                <strong>Terraform (IaC)</strong>. Lo que antes eran 30+ clicks manuales en
+                consola AWS, ahora se despliega con un simple <code>terraform apply</code>.</p>
+                <p>Arquitectura implementada:</p>
+                <ul>
+                    <li>VPC multi-AZ en eu-west-1 (subnets públicas y privadas)</li>
+                    <li>EC2 instance para la aplicación</li>
+                    <li>RDS MySQL en subnet privada</li>
+                    <li>Route 53 para gestión DNS</li>
+                    <li>Security Groups con principio de mínimo privilegio</li>
+                </ul>
+                <p>
+                    <a href="https://github.com/JhonatanRS2001/terrabrokerWithTerraform-IaC-" target="_blank">📂 Ver código Terraform en GitHub</a>
+                </p>
+				<div class="hero-img" style="display: flex; margin-left: -50px;">
+					<img style="height: 150px; width: 250px;" src="img/prueva-vpc.png" alt="vpc">
+				    <img style="height: 150px; width: 250px;" src="img/terraform.png" alt="terraform">
 				</div>
-			</article>	
+            </article>
+
         </div>
-	</section>
+    </section>
 </header>
 
 <footer>
-    <p>© 2025 Jhonatan Romero - Software Developer </p>
+    <p>© 2026 Jhonatan Romero - Junior Cloud Engineer</p>
 </footer>
 
 </body>

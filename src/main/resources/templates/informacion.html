@@ -1,67 +1,71 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Jhonatan</title>
-    <link rel="stylesheet" th:href="@{/css/MiEstilo.css}">
+    <link rel="stylesheet" href="css/MiEstilo.css">
 </head>
 <body>
 
 <header class="header">
     <nav class="navbar">
-		<img style="height: 120px; width: 160px;" th:src="@{/img/logo-jr.png}" alt="logo">
+        <img style="height: 120px; width: 160px;" src="img/logo-jr.png" alt="logo">
         <ul class="nav-links">
-            <li><a th:href="@{/}">Inicio</a></li>
-            <li><a th:href="@{/proyectos}">Proyectos</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
         </ul>
     </nav>
 
-	<section class="about">
-	  <h2>Sobre mí</h2>
-	  <p>¡Hola! Soy <strong>Jhonatan</strong>, tengo <strong>24 años</strong> y hace unos meses me gradué del 
-	  <strong>CFGS en Desarrollo de Aplicaciones Multiplataforma (DAM)</strong> en el <strong>IES Pío Baroja</strong>. 
-	  Actualmente me encuentro en <strong>búsqueda activa de empleo</strong> en el sector del desarrollo de software.</p>
+    <section class="about">
+        <h2>Sobre mí</h2>
+        <p>¡Hola! Soy <strong>Jhonatan</strong>, tengo <strong>24 años</strong> y hace unos meses me gradué del
+        <strong>CFGS en Desarrollo de Aplicaciones Multiplataforma (DAM)</strong> en el <strong>IES Pío Baroja</strong>.
+        Actualmente me encuentro en <strong>búsqueda activa de empleo</strong> como Junior Cloud Engineer.</p>
 
-	  <p>Vivo en <strong>Madrid, en el barrio de Carabanchel</strong>, aunque nací en <strong>Bolivia</strong>. 
-	  Llevo en España desde los 6 años y considero este país mi hogar: ¡Me encanta!</p>
+        <p>Vivo en <strong>Madrid, en el barrio de Carabanchel</strong>, aunque nací en <strong>Bolivia</strong>.
+        Llevo en España desde los 6 años y considero este país mi hogar: ¡Me encanta!</p>
 
-	  <p>Tras terminar bachillerato no tenía claro a qué dedicarme, así que pasé <strong>dos años trabajando en hostelería</strong>. 
-	  Fue una experiencia muy enriquecedora que me permitió conocer de primera mano el mundo laboral y desarrollar habilidades como la 
-	  <strong>responsabilidad, el trabajo en equipo y la atención al cliente</strong>.</p>
+        <p>Tras terminar bachillerato no tenía claro a qué dedicarme, así que pasé <strong>dos años trabajando en hostelería</strong>.
+        Fue una experiencia muy enriquecedora que me permitió conocer de primera mano el mundo laboral y desarrollar habilidades como la
+        <strong>responsabilidad, el trabajo en equipo y la atención al cliente</strong>.</p>
 
-	  <p>Finalmente decidí estudiar el <strong>CFGS DAM</strong> por recomendación de mi hermano, que también es desarrollador de software. 
-	  Siempre me ha apasionado la tecnología, y durante el grado disfruté especialmente los módulos de <strong>Programación</strong> y 
-	  <strong>Bases de Datos</strong>, donde obtuve mis mejores calificaciones.</p>
-	  
-	  <p>Durante mis prácticas pude desarrollar y adquirir conocimientos sobre <strong>infraestructura Cloud en AWS</strong>. Realicé las prácticas 
-	  en <strong>MagicBeans</strong>, una consultora portuguesa especializada en soluciones cloud, donde obtuve la certificación 
-	  <strong>AWS Certified Cloud Practitioner (CLF-C02)</strong>. Posteriormente, de forma autónoma, obtuve la certificación 
-	  <strong>AWS Certified Solutions Architect – Associate (SAA-C03)</strong>, consolidando mis conocimientos en diseño de arquitecturas 
-	  escalables, seguras y altamente disponibles con servicios como <strong>AWS EC2</strong>, <strong>AWS VPC</strong>, 
-	  <strong>AWS S3</strong>, bases de datos gestionadas como <strong>RDS</strong> y <strong>DynamoDB</strong>, así como 
-	  servicios de contenedores (<strong>ECS</strong>, <strong>EKS</strong>) y conceptos de <strong>Big Data</strong> e 
-	  <strong>Inteligencia Artificial</strong>.</p>
+        <p>Finalmente decidí estudiar el <strong>CFGS DAM</strong> por recomendación de mi hermano, que también es desarrollador de software.
+        Siempre me ha apasionado la tecnología, y durante el grado disfruté especialmente los módulos de <strong>Programación</strong> y
+        <strong>Bases de Datos</strong>, donde obtuve mis mejores calificaciones.</p>
 
-	  <p>Terminé el ciclo con una <strong>nota media global de 8,36</strong> y con muchas ganas de seguir aprendiendo.
-	  Mi objetivo ahora es conseguir <strong>mi primera oportunidad profesional</strong> como desarrollador o Cloud Engineer, donde pueda aplicar mis
-	  conocimientos, seguir creciendo y aportar mi energía a un entorno de trabajo colaborativo y dinámico.</p>
-	  
-	  <p>Puedes ponerte en <strong>CONTACTO</strong> conmigo: </p>
-	  <p><strong>E-mail: </strong>jhonatan_6000@hotmail.com</p>
-	  <p><strong>Numero Telefono: </strong>+34 658413751</p>
-	</section>
-	
-	<div class="hero-img" style="margin-left: 150px;">
-		<img style="height: 150px; width: 250px;" th:src="@{/img/madrid_rio.jpg}" alt="Madrid">
-		<img style="height: 150px; width: 250px;" th:src="@{/img/SCZ.jpg}" alt="SCZ">
-		<img style="height: 150px; width: 250px;" th:src="@{/img/java.jpg}" alt="java">
-		<img style="height: 150px; width: 250px;" th:src="@{/img/aws.jpg}" alt="aws">
-	</div>
+        <p>Durante mis prácticas desarrollé conocimientos sobre <strong>infraestructura Cloud en AWS</strong> en
+        <strong>MagicBeans</strong>, una consultora especializada en soluciones cloud, donde obtuve la certificación
+        <strong>AWS Certified Cloud Practitioner (CLF-C02)</strong>. Posteriormente, de forma autónoma, obtuve la certificación
+        <strong>AWS Certified Solutions Architect – Associate (SAA-C03)</strong>, consolidando mis conocimientos en diseño de arquitecturas
+        escalables, seguras y altamente disponibles con servicios como <strong>EC2</strong>, <strong>VPC</strong>,
+        <strong>S3</strong>, <strong>RDS</strong> y <strong>CloudWatch</strong>.</p>
+
+        <p>Además, he aplicado estos conocimientos de forma práctica migrando la infraestructura de mi proyecto 
+        <strong>TerraBroker</strong> a <strong>Infrastructure as Code con Terraform</strong>, desplegando una arquitectura 
+        multi-AZ con VPC, EC2, RDS MySQL, Route 53 y Security Groups siguiendo buenas prácticas de seguridad.</p>
+
+        <p>Terminé el ciclo con una <strong>nota media global de 8,36</strong> y con muchas ganas de seguir aprendiendo.
+        Mi objetivo es conseguir <strong>mi primera oportunidad profesional</strong> como Junior Cloud Engineer o Junior DevOps,
+        donde pueda aplicar mis conocimientos, seguir creciendo y aportar mi energía a un entorno de trabajo colaborativo.</p>
+
+        <p>Puedes ponerte en <strong>contacto</strong> conmigo:</p>
+        <p><strong>Email: </strong>jhonatan_6000@hotmail.com</p>
+        <p><strong>Teléfono: </strong>+34 658 413 751</p>
+        <p><strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/jonathanromerosiacara/" target="_blank">linkedin.com/in/jonathanromerosiacara</a></p>
+        <p><strong>GitHub: </strong><a href="https://github.com/JhonatanRS2001" target="_blank">github.com/JhonatanRS2001</a></p>
+    </section>
+
+    <div class="hero-img" style="margin-left: 150px;">
+        <img style="height: 150px; width: 250px;" src="img/madrid_rio.jpg" alt="Madrid">
+        <img style="height: 150px; width: 250px;" src="img/SCZ.jpg" alt="SCZ">
+        <img style="height: 150px; width: 250px;" src="img/java.jpg" alt="java">
+        <img style="height: 150px; width: 250px;" src="img/aws.jpg" alt="aws">
+    </div>
 </header>
 
 <footer>
-    <p>© 2025 Jhonatan Romero - Software Developer</p>
+    <p>© 2026 Jhonatan Romero - Junior Cloud Engineer</p>
 </footer>
 
 </body>
